@@ -1,20 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import {View} from 'react-native';
+import Titulo from './SRC/Components/Titulo';
+import Nicole from './SRC/Components/Nicole';
+import Murilo from './SRC/Components/Murilo';
+import Vitoria from './SRC/Components/Vitoria';
+import Enviar from './SRC/Components/Enviar';
+import styles from './Styles';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Titulo/>
+      <Nicole/>
+      <Murilo/>
+      <Vitoria/>
+      <Enviar/>
+      
+
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
